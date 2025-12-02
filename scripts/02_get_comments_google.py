@@ -188,7 +188,6 @@ def scrape_google(url, ls_locations, path_db, max_reviews=50):
 if __name__ == "__main__":
     # URL de ejemplo (Un hotel en Madrid, cambia esto por tu URL objetivo)
     target_url = "https://www.google.com/maps"
-    NOMBRE_ARCHIVO = "criticas_parco_verde.csv"
     NOME_DB = "data/raw/scrapcomments.db"
     file_name = "data/raw/espacios_verdes_coimbra.geojson"
     gdf_parques = gpd.read_file(file_name)
@@ -199,6 +198,6 @@ if __name__ == "__main__":
     locations_saved = scrape_google(url=target_url, 
                                ls_locations=ls_locations, 
                                path_db=NOME_DB,
-                               max_reviews=50)
+                               max_reviews=100)
     print(locations_saved)
     print("END SCRAPING")
