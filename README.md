@@ -31,7 +31,3 @@ pip install -r requirements.txt
 
 ## Google Colab
 
-
-
-conda deactivate
-source venv/bin/activate
