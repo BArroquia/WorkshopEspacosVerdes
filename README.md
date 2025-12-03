@@ -10,15 +10,27 @@
 - Transformação e processamento de dados espaciais.
 - Mineração de dados espaciais para a análise da utilização de espaços verdes.
 
+# Repository
+
+https://github.com/BArroquia/WorkshopEspacosVerdes
 
 # Python
 
+## Install dependecies
+
+### Conda
+conda create --name venv --file requirements.txt
+conda activate
+
+### Pure Python
 conda deactivate
 python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
-echo "./venv" >> .gitignore
 pip install -r requirements.txt
+
+## Google Colab
+
 
 
 conda deactivate
