@@ -27,6 +27,7 @@ conda activate
 ### Pure Python
 conda deactivate
 python3 -m venv venv
+> Windows: .\venv\Scripts\Activate.ps1
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
